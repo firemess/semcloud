@@ -24,6 +24,7 @@ public class MemberController
     {
         model.addAttribute("newMember", new Member());
         model.addAttribute("members", memberDao.findAllOrderedByName());
+        System.out.println("fff");
         return "index";
     }
 
