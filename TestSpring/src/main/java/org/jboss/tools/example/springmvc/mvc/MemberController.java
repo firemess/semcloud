@@ -33,6 +33,7 @@ public class MemberController
     {
         if (!result.hasErrors()) {
             memberDao.register(newMember);
+            System.out.println("se lo que a dicho marbine");
             return "redirect:/";
         }
         else {
